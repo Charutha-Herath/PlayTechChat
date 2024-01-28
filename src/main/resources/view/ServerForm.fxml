@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="145.0" prefWidth="300.0" style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.ServerFormController">
+   <children>
+      <Label layoutX="13.0" layoutY="2.0" prefHeight="36.0" prefWidth="126.0" text="Server started" textFill="#08e125">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="3.0" layoutY="25.0" prefHeight="50.0" prefWidth="277.0" text=" Add the client to the chat">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="200.0" layoutY="101.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: #549eec; -fx-background-radius: 15;" text="Add">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" onMouseClicked="#btnClientAddOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-add-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+   </children>
+</AnchorPane>
