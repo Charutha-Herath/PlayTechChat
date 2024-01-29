@@ -1,50 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="628.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.ClientFormController">
-
-    <children>
-        <Label fx:id="lblUsername" layoutX="29.0" layoutY="16.0" prefHeight="58.0" prefWidth="135.0" text="Client">
-            <font>
-                <Font name="Arial" size="37.0" />
-            </font>
-        </Label>
-      <AnchorPane layoutX="2.0" layoutY="79.0" prefHeight="547.0" prefWidth="482.0" style="-fx-background-color: #90CAF9; -fx-background-radius: 20;">
-         <children>
-              <JFXButton fx:id="btnSend" defaultButton="true" layoutX="354.0" layoutY="478.0" onAction="#btnSendOnAction" prefHeight="44.0" prefWidth="119.0" style="-fx-background-color: #76ff03; -fx-background-radius: 90;" text="Send" textFill="WHITE">
-                  <effect>
-                      <DropShadow radius="4.75" width="0.0" />
-                  </effect>
-                  <font>
-                      <Font name="Bookman Old Style Bold" size="18.0" />
-                  </font>
-              </JFXButton>
-              <JFXTextField fx:id="txtField" focusColor="WHITE" layoutX="11.0" layoutY="477.0" opacity="0.47" prefHeight="44.0" prefWidth="329.0" style="-fx-background-color: #212121; -fx-background-radius: 90; -fx-text-fill: white;" unFocusColor="WHITE">
-                  <font>
-                      <Font name="Bookman Old Style Bold" size="18.0" />
-                  </font>
-              </JFXTextField>
-              <ImageView fx:id="imgSelection" fitHeight="44.0" fitWidth="38.0" layoutX="289.0" layoutY="480.0" onMouseClicked="#imgChooseOnAction" pickOnBounds="true" preserveRatio="true">
-                  <image>
-                      <Image url="@../img/icons8-camera-50.png" />
-                  </image>
-              </ImageView>
-              <ScrollPane layoutX="8.0" layoutY="6.0" prefHeight="467.0" prefWidth="471.0">
-                  <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="454.0" prefWidth="469.0">
-                          <children>
-                              <VBox fx:id="VBox" prefHeight="449.0" prefWidth="460.0" />
-                          </children>
-                      </AnchorPane>
-                  </content>
-              </ScrollPane>
-         </children></AnchorPane>
-    </children>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.Controller.ClientFormController"
+            prefHeight="400.0" prefWidth="600.0">
 
 </AnchorPane>

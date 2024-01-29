@@ -37,9 +37,6 @@ public class Client implements Runnable, Serializable {
             e.getCause().printStackTrace();
         }
     }
-    public String getName() {
-        return name;
-    }
 
     public void loadScene() throws IOException {
         Stage stage =new Stage();
@@ -71,9 +68,9 @@ public class Client implements Runnable, Serializable {
             try {
                 message = dataInputStream.readUTF();
                 if (message.equals("*image*")) {
-                    receiveImg();
+                    //receiveImg();
                 }else {
-                    clientFormController.writeMsg(message);
+                    //clientFormController.writeMsg(message);
                 }
             } catch (IOException e) {
                 try {
@@ -83,28 +80,6 @@ public class Client implements Runnable, Serializable {
                 }
             }
         }
-    }
-
-    public void sendMsg(String msg) throws IOException {
-        dataOutputStream.writeUTF(msg);
-        dataOutputStream.flush();
-    }
-
-    public void sendImg(byte[] bytes) throws IOException {
-        dataOutputStream.writeUTF("*image*");
-        dataOutputStream.writeInt(bytes.length);
-        dataOutputStream.write(bytes);
-        dataOutputStream.flush();
-    }
-
-
-    public void receiveImg() throws IOException {
-        String utf = dataInputStream.readUTF();
-        int size = dataInputStream.readInt();
-        byte[] bytes = new byte[size];
-        dataInputStream.readFully(bytes);
-        System.out.println(name + "-Image Received: from " + utf);
-        clientFormController.setImg(bytes, utf);
     }
 
 }
