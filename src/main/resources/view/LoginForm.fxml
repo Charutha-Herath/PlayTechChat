@@ -9,11 +9,6 @@
 
 <AnchorPane prefHeight="487.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.LoginFormController">
     <children>
-        <ImageView fitHeight="96.0" fitWidth="84.0" layoutX="305.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@../img/17973908.jpg" />
-            </image>
-        </ImageView>
       <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="486.0" prefWidth="472.0" style="-fx-background-color: #90CAF9; -fx-background-radius: 15;">
          <children>
               <AnchorPane layoutX="66.0" layoutY="16.0" opacity="0.79" prefHeight="404.0" prefWidth="342.0" style="-fx-background-color: #212121; -fx-background-radius: 15;">
