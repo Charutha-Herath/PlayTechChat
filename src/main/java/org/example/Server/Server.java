@@ -13,6 +13,7 @@ public class Server implements Runnable{
     }
     public static Server getServerSocket() throws IOException {
         return server == null ? server  = new Server() : server;
+
     }
 
     @Override

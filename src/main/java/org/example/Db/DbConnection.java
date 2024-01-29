@@ -15,6 +15,7 @@ public class DbConnection {
                 "jdbc:mysql://localhost:3306/chatapp",
                 "root",
                 "Ijse@1234"
+
         );
 
     }

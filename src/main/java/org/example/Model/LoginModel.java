@@ -22,5 +22,6 @@ public class LoginModel {
             name.add(resultSet.getString(1));
         }
         return name;
+
     }
 }
