@@ -8,6 +8,8 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
 import javafx.scene.layout.AnchorPane;
+import org.example.Client.Client;
+import org.example.Model.ClientModel;
 import org.example.Model.LoginModel;
 
 import java.io.IOException;
@@ -27,15 +29,22 @@ public class LoginFormController {
         loadClients();
     }
 
-    public void btnLoginOnAction(ActionEvent actionEvent) {
+    public void btnLoginOnAction(ActionEvent actionEvent) throws SQLException, IOException {
+
+        String name = (String) UsernameCombo.getSelectionModel().getSelectedItem();
+        String password = TxtLoginPassword.getText();
+        String pass = ClientModel.checkUser(name);
+
+        if (pass.equalsIgnoreCase(password)) {
+
+            Client client = new Client(name);
+            new Thread(client).start();
+            root.getScene().getWindow().hide();
+        }
 
     }
 
     public void CmbLoadUsername(ActionEvent actionEvent) {
-
-    }
-
-    public void btnSigninOnAction(ActionEvent actionEvent) {
 
     }
 
