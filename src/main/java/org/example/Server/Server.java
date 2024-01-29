@@ -8,7 +8,7 @@ public class Server implements Runnable{
     private static Server server;
     private final ServerSocket serverSocket;
     public Server() throws IOException {
-        serverSocket = new ServerSocket(1234);
+        serverSocket = new ServerSocket(5000);
         System.out.println("Server Started");
     }
     public static Server getServerSocket() throws IOException {
